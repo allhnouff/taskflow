@@ -1,0 +1,61 @@
+/**
+ * Global Theme Variables
+ * 
+ * This file defines CSS custom properties for the TaskFlow application theme.
+ * All colors are based on a warm golden yellow palette.
+ * 
+ * Usage:
+ * - Use CSS variables for dynamic theming: var(--color-primary-500)
+ * - Use Tailwind classes for static styling: bg-primary-500
+ * - Use semantic classes: bg-app, text-primary, etc.
+ */
+
+:root {
+  /* Primary Golden Yellow Theme - 10 shades */
+  --color-primary-50: #fefce8;   /* Lightest - Background tints */
+  --color-primary-100: #fef9c3;  /* Very light - Subtle highlights */
+  --color-primary-200: #fef08a;  /* Light - Badges, hover states */
+  --color-primary-300: #fde047;  /* Medium-light - Active elements */
+  --color-primary-400: #FACC15;  /* Primary Dark Yellow - Buttons hover */
+  --color-primary-500: #FCD34D;  /* Primary Yellow - Base - Primary buttons, accents */
+  --color-primary-600: #ca8a04;  /* Medium-dark - Hover states */
+  --color-primary-700: #a16207;  /* Dark - Text on light bg */
+  --color-primary-800: #854d0e;  /* Darker - Text, badges */
+  --color-primary-900: #713f12;  /* Darkest - Strong emphasis */
+
+  /* Background Colors */
+  --color-bg-primary: #fefce8;    /* Main app background */
+  --color-bg-white: #ffffff;      /* Cards, panels */
+  --color-bg-card: #ffffff;       /* Card backgrounds */
+
+  /* Text Colors */
+  --color-text-primary: #1F1F1F;     /* Black / Text - Main headings */
+  --color-text-secondary: #374151;   /* Body text */
+  --color-text-muted: #6B7280;       /* Muted Text - Secondary text */
+  --color-text-light: #9CA3AF;       /* Placeholders, hints */
+
+  /* Border Colors */
+  --color-border-light: #E5E7EB;     /* Gray (Borders / Labels) - Default borders */
+  --color-border-medium: #d1d5db;    /* Input borders */
+  --color-border-dark: #9ca3af;      /* Strong borders */
+
+  /* Priority Colors */
+  --color-priority-high: #DC2626;    /* Danger (High Priority) */
+  --color-priority-medium: #D97706;  /* Medium Priority */
+  --color-priority-low: #65A30D;     /* Low Priority */
+
+  /* Status Colors */
+  --color-status-in-progress: #FBBF24;  /* In Progress Label */
+  --color-status-not-started: #9CA3AF;  /* Not Started Label */
+  --color-status-completed: #65A30D;    /* Completed (using Low Priority green) */
+  --color-status-overdue: #DC2626;      /* Overdue (using High Priority red) */
+  --color-status-upcoming: #fefce8;     /* primary-50 */
+}
+
+/* Dark mode support (optional, for future) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark mode variables can be added here */
+  }
+}
+
